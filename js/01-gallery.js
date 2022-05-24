@@ -44,8 +44,8 @@ galleryEl.addEventListener("click", (ev) => {
 function closeImg(ev) {
   if (ev.code === "Escape" && imgSrc.visible()) {
     imgSrc.close();
-    document.removeEventListener("keydown", closeImg);
   }
+  document.removeEventListener("keydown", closeImg);
 }
 
 console.log(galleryItems);
